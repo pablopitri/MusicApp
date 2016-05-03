@@ -1,0 +1,13 @@
+<%= form_for(@playlist) do |f| %>
+	<div class="field">
+		<%= f.label :name, "Nombre" %>
+		<%= f.text_field :name %>
+	</div>
+	<div class="field">
+		<%= f.label :number_of_votes, "Votos" %>
+		<%= f.text_field :number_of_votes %>
+	</div>
+	<div class="field">
+		<%= f.submit("Crear Playlist")%>
+	</div>
+<% end %>

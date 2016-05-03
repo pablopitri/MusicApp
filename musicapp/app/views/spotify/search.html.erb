@@ -1,0 +1,8 @@
+<h1>Resultados de busqueda</h1>
+<ul>
+<% @results.each do |result| %>
+	<li><%= result.name %> - <%= result.album.name %> - <%= result.artists.first.name %> - 
+		<audio src="<%= result.preview_url %>" preload="none" controls></audio>
+	</li>
+<% end %>
+</ul>
